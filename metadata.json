@@ -1,0 +1,8 @@
+{
+  "name": "OrangeBite Food Delivery Platform",
+  "description": "Production-grade food delivery platform with live restaurant discovery, customizable menus, cart calculations, coupon validation, demo payments, real-time order tracking, and Django reverse-engineering architecture.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

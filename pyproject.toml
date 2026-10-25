@@ -1,0 +1,26 @@
+[project]
+name = "orangebite"
+version = "1.0.0"
+description = "Reverse-Engineered Python Django Food Delivery Platform"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "Django>=5.0,<5.2",
+    "djangorestframework>=3.15.0",
+    "django-cors-headers>=4.3.1",
+    "python-dotenv>=1.0.1",
+    "Pillow>=10.3.0",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+exclude = [
+    "migrations",
+    ".venv",
+    "node_modules",
+]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B"]
+ignore = ["E501"]

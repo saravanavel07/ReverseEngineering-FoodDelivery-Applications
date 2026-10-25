@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}OrangeBite — Swift & Fresh Delivered{% endblock %}</title>
+    <!-- HTMX and Design Tokens -->
+    <script src="https://unpkg.com/htmx.org@1.9.12"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #FC8019;
+            --primary-dark: #E86F00;
+            --primary-light: #FFF1E5;
+            --bg-alt: #FFF9F4;
+            --text-main: #202124;
+            --text-muted: #686B78;
+            --border: #E8E8E8;
+            --success: #16803C;
+            --error: #C62828;
+        }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: var(--text-main);
+            background: #FAFAFA;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background: #FFFFFF;
+            border-bottom: 1px solid var(--border);
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo-wrap {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary);
+            text-decoration: none;
+        }
+        .logo-box {
+            width: 36px;
+            height: 36px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="/" class="logo-wrap">
+            <div class="logo-box">🍲</div>
+            <span>Orange<span style="color: #202124;">Bite</span></span>
+        </a>
+        <nav style="display: flex; gap: 1.5rem; font-size: 0.875rem; font-weight: 600;">
+            <a href="/api/restaurants/" style="color: var(--text-main); text-decoration: none;">DRF API</a>
+            <a href="/admin/" style="color: var(--text-main); text-decoration: none;">Django Admin</a>
+            <a href="/health/" style="color: var(--primary); text-decoration: none;">Health Check</a>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+        <div style="max-w: 800px; margin: 4rem auto; text-align: center; padding: 2rem;">
+            <h1 style="font-family: 'Outfit', sans-serif; font-size: 2.5rem; color: #202124;">
+                OrangeBite Food Delivery Platform
+            </h1>
+            <p style="color: #686B78; font-size: 1rem; max-width: 600px; margin: 1rem auto;">
+                Python Django backend running with Django REST Framework, authoritative cart pricing, coupon engine, and atomic order transactions.
+            </p>
+            <div style="margin-top: 2rem; display: flex; gap: 1rem; justify-content: center;">
+                <a href="/api/restaurants/" style="background: var(--primary); color: white; padding: 0.75rem 1.5rem; border-radius: 1rem; font-weight: 700; text-decoration: none;">
+                    Explore REST API
+                </a>
+                <a href="/admin/" style="background: #202124; color: white; padding: 0.75rem 1.5rem; border-radius: 1rem; font-weight: 700; text-decoration: none;">
+                    Django Admin Console
+                </a>
+            </div>
+        </div>
+        {% endblock %}
+    </main>
+</body>
+</html>
