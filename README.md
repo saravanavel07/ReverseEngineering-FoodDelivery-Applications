@@ -1,11 +1,15 @@
 # OrangeBite — Reverse-Engineered Food Delivery Platform
 
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=700&size=24&duration=2800&pause=700&color=FC8019&center=true&vCenter=true&width=750&lines=Discover+your+next+favorite+meal;Customize+your+order+with+ease;Follow+every+delivery+stage+live;Fresh+food%2C+thoughtful+engineering" alt="OrangeBite animated tagline" />
+</p>
+
 [![Python](https://img.shields.io/badge/Python-3.10%20%7C%203.12-blue.svg)](https://www.python.org/)
 [![Django](https://img.shields.io/badge/Django-5.0+-green.svg)](https://www.djangoproject.com/)
 [![DRF](https://img.shields.io/badge/Django%20REST%20Framework-3.15+-red.svg)](https://www.django-rest-framework.org/)
 [![License](https://img.shields.io/badge/License-MIT-orange.svg)](LICENSE)
 
-An end-to-end, production-style Indian food delivery platform inspired by observable architectural patterns of modern Indian platforms (such as Swiggy), built with original **OrangeBite** branding, live-motion orange particles, server-authoritative pricing, coupon validation engine, real-time simulated order tracking, customer address book, and administrative sales reporting.
+An end-to-end, production-style Indian food delivery platform inspired by observable architectural patterns of modern Indian platforms (such as Swiggy), built with original **OrangeBite** branding, independently designed interfaces, and documented engineering decisions.
 
 ---
 
@@ -35,7 +39,20 @@ The objective of OrangeBite is to demonstrate clean-room software reverse engine
 
 ---
 
-## 3. Technology Stack
+## 3. Animated Experience
+
+The README includes a rotating animated tagline above, and the application adds motion to the food-discovery and delivery experience:
+
+- **Floating citrus and ambient glow** bring the OrangeBite landing experience to life.
+- **Animated delivery route and bike** accompany order progress from placement through delivery.
+- **Live order-state transitions** make each stage visible as the demo order advances.
+- **Reduced-motion support** is respected by the particle animation for visitors who prefer less motion.
+
+The tagline is provided by [readme-typing-svg](https://github.com/DenverCoder1/readme-typing-svg). If the external image service is unavailable, the project description and feature list remain readable.
+
+---
+
+## 4. Technology Stack
 
 - **Backend**: Python 3.10+, Django 5.0, Django REST Framework, Django ORM
 - **Database**: SQLite (local development), PostgreSQL (production Docker setup)
@@ -45,7 +62,7 @@ The objective of OrangeBite is to demonstrate clean-room software reverse engine
 
 ---
 
-## 4. Repository Structure
+## 5. Repository Structure
 
 ```
 orangebite/
@@ -89,7 +106,7 @@ orangebite/
 
 ---
 
-## 5. Quickstart & Local Development
+## 6. Quickstart & Local Development
 
 ### 1. Virtual Environment & Dependencies
 ```bash
@@ -116,7 +133,7 @@ python manage.py runserver
 
 ---
 
-## 6. Docker Deployment
+## 7. Docker Deployment
 
 To launch the full production-style PostgreSQL, Redis, and Gunicorn stack:
 ```bash
@@ -126,7 +143,7 @@ Access the application at `http://localhost:8000` (or `http://localhost:3000` in
 
 ---
 
-## 7. Security & Privacy Notice
+## 8. Security & Privacy Notice
 
 - **Payment Safety**: All payments in OrangeBite run in simulated test mode. No actual money is charged, and no sensitive credentials (card numbers, CVVs, UPI PINs) are processed.
 - **Original IP**: OrangeBite uses original brand names, logos, color codes, and assets. It does not reproduce proprietary logos or private source code.
